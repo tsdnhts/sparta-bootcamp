@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .wrap {
-            background-color: green;
-        }
     </style>
 
     <script type="module">
@@ -91,58 +88,101 @@
 </head>
 
 <body>
-    
-        <div style="width:35%; height:400px; border:1px; float:left;">
-            <img src="https://opening-attachments.greetinghr.com/20230131/92dd982c-4d1f-4f71-a8a9-118fe58ee915/SCC.png"
-                style="margin-right: 20px; margin-bottom: 10px; display: block; margin: 0 auto; width:350px; height:200px;">
-        </div>
-   
-    
-        <div style="text-align: center; margin-top: 200px;   width:65%; height:400px; border:1px; float:right;">
-            스파르타 코딩클럽 대망의 첫 프로젝트
-        </div>
-   
+
+    <div style="width:35%; height:400px; border:1px; float:left;">
+        <img src="https://opening-attachments.greetinghr.com/20230131/92dd982c-4d1f-4f71-a8a9-118fe58ee915/SCC.png"
+            style="margin-right: 20px; margin-bottom: 10px; display: block; margin: 0 auto; width:350px; height:200px;">
+    </div>
 
 
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne">
-                    프로젝트의 의미
+    <div style="text-align: center; margin-top: 200px;   width:65%; height:400px; border:1px; float:right;">
+        스파르타 코딩클럽 대망의 첫 프로젝트
+    </div>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="heading1">
+                <button class="btn btn-default" data-toggle="collapse" data-target="#body1" aria-expanded="true"
+                    aria-controls="body1">
+                    프로젝트의 "의의"
                 </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
+            </div>
+            <div id="body1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                <div class="product card-body">
                     첫 프로젝트로써 앱개발 강의 수강 후 직접 만들어 보는 어쩌구 저쩌구
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo">
+    </div>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="heading2">
+                <button class="btn btn-default" data-toggle="collapse" data-target="#body2" aria-expanded="true"
+                    aria-controls="body2">
                     프로젝트 진행 중 느낀 점
                 </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
+            </div>
+            <div id="body2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">
+                <div class="product card-body">
                     그동안 수업을 들을 때는 주어진 코드를 복사해서 사용하였으나, 직접 코딩을 하려고 보니 어쩌구 저쩌꾸
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree">
+    </div>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="heading3">
+                <button class="btn btn-default" data-toggle="collapse" data-target="#body3" aria-expanded="true"
+                    aria-controls="body3">
                     미흡한 점 & 보완 사항
                 </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
+            </div>
+            <div id="body3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
+                <div class="product card-body">
+                    아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="heading3">
+                <button class="btn btn-default" data-toggle="collapse" data-target="#body3" aria-expanded="true"
+                    aria-controls="body3">
+                    미흡한 점 & 보완 사항
+                </button>
+            </div>
+            <div id="body3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
+                <div class="product card-body">
+                    아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="heading3">
+                <button class="btn btn-default" data-toggle="collapse" data-target="#body3" aria-expanded="true"
+                    aria-controls="body3">
+                    미흡한 점 & 보완 사항
+                </button>
+            </div>
+            <div id="body3" class="collapse show" aria-labelledby="heading3" data-parent="#accordion">
+                <div class="product card-body">
                     아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
                 </div>
             </div>
